@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<canvashack>
+	<name>Color Schedule</name>
+	<id>color-schedule</id>
+	<abstract>Color the color blocks in the color schedule in the calendar</abstract>
+	<authors>
+		<author>
+			<name>Seth Battis</name>
+			<email>SethBattis@stmarksschool.org</email>
+		</author>
+	</authors>
+	<components>
+		<javascript>color-schedule.js.php</javascript>
+		<canvas>
+			<pages>
+				<include>
+					<page>
+						<type>regex</type>
+						<pattern>/.*\/calendar/</pattern>
+					</page>
+				</include>
+			</pages>
+			<dom>
+				<bundle>
+					<event>load</event>
+					<action>colorize()</action>
+					<selector>.fc-event</selector>
+				</bundle>
+			</dom>
+		</canvas>
+	</components>
+</canvashack>

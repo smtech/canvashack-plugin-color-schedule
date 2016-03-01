@@ -1,0 +1,16 @@
+{
+    "name": "canvashack/plugin-color-schedule",
+    "description": "Color the color blocks in the color schedule in the calendar",
+    "type": "canvashack-plugin",
+    "require": {
+        "smtech/stmarks-colors": "dev-master"
+    },
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Seth Battis",
+            "email": "sethbattis@stmarksschool.org"
+        }
+    ],
+    "minimum-stability": "dev"
+}

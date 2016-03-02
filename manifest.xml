@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 <canvashack>
-	<name>Color Schedule</name>
+	<name>St. Mark's Color Schedule</name>
 	<id>color-schedule</id>
 	<abstract>Color the color blocks in the color schedule in the calendar</abstract>
+	<description>St. Mark's stores our daily schedule in a Google Calendar called "Color Schedule". That calendar is synced into a course in Canvas called (of course) "Color Schedule". All users are enrolled in this course, so that they have access to the calendar, and the color blocks are color-coded in the Canvas calendar view for increased readability.</description>
 	<authors>
 		<author>
 			<name>Seth Battis</name>
@@ -11,6 +12,7 @@
 	</authors>
 	<components>
 		<javascript>color-schedule.js.php</javascript>
+		<css>color-schedule.css.php</css>
 		<canvas>
 			<pages>
 				<include>

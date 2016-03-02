@@ -1,5 +1,5 @@
 {
-    "name": "canvashack/plugin-color-schedule",
+    "name": "canvashack/plugin-stmarks-color-schedule",
     "description": "Color the color blocks in the color schedule in the calendar",
     "type": "canvashack-plugin",
     "require": {

@@ -22,9 +22,9 @@
 			</pages>
 			<dom>
 				<bundle>
-					<event>load</event>
-					<action>colorize()</action>
-					<selector>.fc-event</selector>
+					<event>ready</event>
+					<action>colorSchedule()</action>
+					<selector>#calendar-app</selector>
 				</bundle>
 			</dom>
 		</canvas>

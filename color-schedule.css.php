@@ -20,5 +20,18 @@ foreach(sm::all() as $color) {
 	
 	";
 }
+
+$color = '#999';
+$background = '#efefef';
 	
 ?>
+
+.stmarks-default-event {
+	color: <?= $color ?> !important;
+	background-color: <?= $background ?> !important;
+	border-color: <?= $color ?> !important;
+}
+
+.stmarks-default-agenda {
+	color: <?= $color ?> !important;
+}

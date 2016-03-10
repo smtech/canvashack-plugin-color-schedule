@@ -13,11 +13,19 @@ var canvashack = {
 			var agenda = $(e).find('.ig-title.group_course_<?= $pluginMetadata['color_schedule'] ?>');
 			if (events.length > 0) {
 				$(events).each(function(i, e) {
-					$(e).addClass('stmarks-' + $(e).find('.fc-title').text().toLowerCase().substring(13).replace(/ /, '-') + '-event');
+					var block = $(e).find('.fc-title').text().toLowerCase().substring(13).replace(/ /, '-');
+					if (block != 'red' && block != 'orange' && block != 'yellow' && block != 'green' && block != 'blue' && block != 'plum' && block != 'brown') {
+						block = 'default';
+					}
+					$(e).addClass('stmarks-' + block + '-event');
 				});
 			} else if (agenda.length > 0) {
 				$(agenda).each(function(i, e) {
-					$(e).addClass('stmarks-' + $(e).text().toLowerCase().trim().replace(/\s+/g,'-').substring(7) + '-agenda');
+					var block = $(e).text().toLowerCase().trim().replace(/\s+/g,'-').substring(7);
+					if (block != 'red' && block != 'orange' && block != 'yellow' && block != 'green' && block != 'blue' && block != 'plum' && block != 'brown') {
+						block = 'default';
+					}
+					$(e).addClass('stmarks-' + block + '-agenda');
 				});
 			}
 		});

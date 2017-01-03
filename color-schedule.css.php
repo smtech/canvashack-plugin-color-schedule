@@ -14,11 +14,11 @@ foreach(sm::all() as $color) {
 	border-color: " . sm::get($color)->dark()->hex() . " !important;
 }
 
-.stmarks-$color-agenda {
+.stmarks-$color-agenda .agenda-event__icon, .stmarks-$color-agenda .agenda-event__title {
 	color: " . sm::get($color)->dark()->hex() . " !important;
 }
-	
+
 	";
 }
-	
+
 ?>
